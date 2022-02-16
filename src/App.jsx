@@ -29,14 +29,15 @@ function App() {
         id=""
         value={long_url}
         onChange={(e) => setURL(e.target.value)}
+        placeholder="Enter URL"
       />
       <button onClick={shortURL}>ShortURL</button>
       <h1>
         short URL is : <a href="">{short_URL}</a>{" "}
+        <button onClick={() => navigator.clipboard.writeText(short_URL)}>
+          Copy!!
+        </button>
       </h1>{" "}
-      <button onClick={() => navigator.clipboard.writeText(short_URL)}>
-        Copy!!
-      </button>
     </div>
   );
 }
