@@ -5,15 +5,6 @@ import axios from "axios";
 function App() {
   const [long_url, setURL] = useState("");
   const [short_URL, setShort_URL] = useState("");
-  const [copySuccess, setCopySuccess] = useState("");
-
-  const copyURL = async () => {
-    short_URL.current.select();
-    document.execCommand("copy");
-
-    e.target.focus();
-    setCopySuccess("Copied!");
-  };
 
   const shortURL = async () => {
     const bitlyAPI = "https://api-ssl.bitly.com/v4/shorten";
