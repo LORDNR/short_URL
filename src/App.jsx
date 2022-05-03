@@ -38,7 +38,7 @@ function App() {
           {short_URL}
         </a>{" "}
         <button onClick={() => navigator.clipboard.writeText(short_URL)}>
-          Copy!!
+          Copy!
         </button>
       </h1>{" "}
     </div>
