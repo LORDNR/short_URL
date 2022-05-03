@@ -33,7 +33,10 @@ function App() {
       />
       <button onClick={shortURL}>ShortURL</button>
       <h1>
-        short URL is : <a href="">{short_URL}</a>{" "}
+        short URL is :{" "}
+        <a href={short_URL} target="_blank">
+          {short_URL}
+        </a>{" "}
         <button onClick={() => navigator.clipboard.writeText(short_URL)}>
           Copy!!
         </button>
